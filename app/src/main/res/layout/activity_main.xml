@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/empbg1"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bgcolor"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_work_history_24"
+            android:layout_gravity="end"
+            android:onClick="nextpage"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Registration Form"
+        android:background="@drawable/header_bg"
+        android:padding="25dp"
+        android:textColor="@color/white"
+      android:layout_marginTop="@dimen/mt"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/mrl"
+        android:layout_marginRight="@dimen/mrl"
+       />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter First Name"
+            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter LastName"
+            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mail"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter mail"
+            app:startIconDrawable="@drawable/ic_baseline_mail_outline_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter mobile number"
+            app:startIconDrawable="@drawable/ic_baseline_phone_iphone_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/desg"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter Designation"
+            app:startIconDrawable="@drawable/ic_baseline_badge_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doj"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginRight="@dimen/mrl"
+            android:hint="Enter Date of Joining"
+            app:startIconDrawable="@drawable/ic_baseline_edit_calendar_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="#F44336"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="date"
+                android:ems="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:background="@drawable/btncorner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnid"
+            android:text="Add to Database"
+            android:layout_marginTop="@dimen/mt"
+            android:layout_marginLeft="@dimen/mrl"
+            android:layout_marginRight="@dimen/mrl"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+</ScrollView>
