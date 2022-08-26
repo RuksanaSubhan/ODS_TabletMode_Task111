@@ -105,6 +105,7 @@ android:textColor="@color/black"
             android:hint="Designation"
 
             android:textSize="20sp"/>
+        //
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
