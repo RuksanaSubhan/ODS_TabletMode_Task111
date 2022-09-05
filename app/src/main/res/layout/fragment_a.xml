@@ -4,26 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_selector"
     tools:context=".FragmentA">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" Employee Data :"
+        android:text=" Employee Activities"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:textColor="@color/purple_700"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/teal_700"/>
 <TextView
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="count"
-    android:id="@+id/countno"
-    android:visibility="gone"
-    android:textSize="30dp"
-    android:layout_marginLeft="80dp"/>
+    android:text="Total Employees :"
+    android:padding="4dp"
+ android:gravity="center"
+    android:background="@color/teal_700"
+    android:textSize="25sp"
+    android:textColor="@color/white"
+    android:layout_marginLeft="3dp"
+   />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:padding="4dp"
+        android:id="@+id/countno"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="22sp"
+        android:layout_marginLeft="3dp"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

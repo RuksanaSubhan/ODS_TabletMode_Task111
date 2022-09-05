@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class FragmentB extends Fragment {
 
  String fname,mob,mail1,lname,desg,doj;
+
     public FragmentB() {
         // Required empty public constructor
     }
@@ -43,13 +44,13 @@ public class FragmentB extends Fragment {
         TextView disg=Root.findViewById(R.id.desgdispid);
         TextView dojoin=Root.findViewById(R.id.dojdispid);
 
-        firstname.setText("FirstName :"+fname);
-        maill.setText("E-Mail :"+mail1);
-        mobi.setText("Mobile No. :"+mob);
-        lasttname.setText("LastName :"+lname);
-        disg.setText("Designation :"+doj);
-        dojoin.setText("Date of Joining :"+desg);
 
+            firstname.setText(fname);
+            maill.setText(mail1);
+            mobi.setText(mob);
+            lasttname.setText(lname);
+            disg.setText(doj);
+            dojoin.setText(desg);
         return Root;
     }
 }

@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 public class DbManager extends SQLiteOpenHelper {
@@ -54,7 +55,7 @@ public class DbManager extends SQLiteOpenHelper {
     public Cursor readalldata() {
         SQLiteDatabase db=this.getWritableDatabase();
         String qry="select * from employeedata order by id desc";
-        Cursor cursor=db.rawQuery(qry,null);
+        Cursor cursor=db.rawQuery(qry, null);
         return  cursor;
     }
 }
